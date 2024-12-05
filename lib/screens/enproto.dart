@@ -155,13 +155,18 @@ class _enProtoPageState extends State<enProtoPage> {
   }
 
   Future<void> _launchURL(BuildContext context, String url) async {
-    final Uri uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Gagal membuka $url')),
-      );
-    }
+  final Uri uri = Uri.parse(url);
+      try {
+        if (!await launchUrl(
+          uri,
+          mode: LaunchMode.externalApplication, // Gunakan mode ini untuk membuka di browser eksternal
+        )) {
+          throw 'Could not launch $url';
+        }
+      } catch (e) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Gagal membuka $url')),
+        );
+      }
   }
 }
