@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:bioapp/widgets/custom_sidebar.dart';
-import 'package:bioapp/widgets/encustom_sidebar.dart';
 import 'package:bioapp/screens/proto.dart';
 
 class Dashboard extends StatelessWidget {

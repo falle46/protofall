@@ -1,7 +1,6 @@
 import 'package:bioapp/screens/dashboard.dart';
 import 'package:bioapp/screens/endashboard.dart';
 import 'package:flutter/material.dart';
-import 'package:bioapp/screens/error.dart';
 import 'package:bioapp/screens/info.dart';
 
 class CustomSidebar extends StatelessWidget {
