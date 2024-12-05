@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:bioapp/widgets/custom_sidebar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class ProtoPage extends StatelessWidget {
+class ProtoPage extends StatefulWidget {
+  @override
+  State<ProtoPage> createState() => _ProtoPageState();
+}
+
+class _ProtoPageState extends State<ProtoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
