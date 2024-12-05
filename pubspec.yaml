@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.1.11
 
 dev_dependencies:
   flutter_test:
@@ -19,4 +20,5 @@ flutter:
   uses-material-design: true
 
   assets:
-  - assets/images/dashboard.png/fall.png
+    - lib/assets/images/fall.png
+    - lib/assets/icons/logo.png

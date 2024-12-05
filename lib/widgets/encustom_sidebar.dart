@@ -1,10 +1,11 @@
 import 'package:bioapp/screens/dashboard.dart';
 import 'package:bioapp/screens/endashboard.dart';
+import 'package:bioapp/screens/eninfo.dart';
 import 'package:flutter/material.dart';
 import 'package:bioapp/screens/error.dart';
 import 'package:bioapp/screens/info.dart';
 
-class CustomSidebar extends StatelessWidget {
+class enCustomSidebar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -36,14 +37,14 @@ class CustomSidebar extends StatelessWidget {
                 color: Colors.white,
               ),
               title: Text(
-                'Halaman Utama',
+                'Home Page',
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
                 Navigator.pop(context); // Menutup drawer
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Dashboard()),
+                  MaterialPageRoute(builder: (context) => enDashboard()),
                 );
               },
             ),
@@ -56,14 +57,14 @@ class CustomSidebar extends StatelessWidget {
                 color: Colors.white,
               ),
               title: Text(
-                'English',
+                'Bahasa Indonesia',
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
                 Navigator.pop(context); // Menutup drawer
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => enDashboard()),
+                  MaterialPageRoute(builder: (context) => Dashboard()),
                 );
               },
             ),
@@ -75,14 +76,14 @@ class CustomSidebar extends StatelessWidget {
                 color: Colors.white,
               ),
               title: Text(
-                'Info Aplikasi',
+                'App Info',
                 style: TextStyle(color: Colors.white),
               ),
               onTap: () {
                 Navigator.pop(context); // Menutup drawer
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => InfoPage()),
+                  MaterialPageRoute(builder: (context) => enInfoPage()),
                 );
               },
             ),

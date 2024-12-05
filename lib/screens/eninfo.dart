@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class InfoPage extends StatelessWidget {
+class enInfoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Info Aplikasi',
+          'App Info',
           style: TextStyle(
             color: Colors.blue, // Warna teks ProtoFall
             fontWeight: FontWeight.bold,
@@ -32,7 +32,7 @@ class InfoPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 16.0),
                 child: Text(
-                  '‘Proto’ diambil dari kata Portofolio dan ‘Fall’ dari nama pembuat aplikasi ini dengan makna aplikasi ini dibuat untuk memberikan Protofolio singkat mengenai pembuat aplikasi.',
+                  '‘Proto’ is taken from the word Protfolio and ‘Fall’ from the name of the creator of this application, meaning that this application was created to provide a short portfolio about the creator of the application.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.blue[400],

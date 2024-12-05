@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
           style: TextStyle(
             fontSize: 36,
             fontWeight: FontWeight.bold,
-            color: Colors.white, // Warna teks putih sesuai dengan tema
+            color: Colors.blue, // Warna teks putih sesuai dengan tema
           ),
         ),
       ),

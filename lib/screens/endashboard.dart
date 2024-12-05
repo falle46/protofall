@@ -1,9 +1,8 @@
+import 'package:bioapp/screens/enproto.dart';
 import 'package:flutter/material.dart';
-import 'package:bioapp/widgets/custom_sidebar.dart';
 import 'package:bioapp/widgets/encustom_sidebar.dart';
-import 'package:bioapp/screens/proto.dart';
 
-class Dashboard extends StatelessWidget {
+class enDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +27,7 @@ class Dashboard extends StatelessWidget {
           ),
         ),
       ),
-      drawer: CustomSidebar(),
+      drawer: enCustomSidebar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(16.0),
@@ -62,7 +61,7 @@ class Dashboard extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Semester 5, Ilmu Komputer',
+                          'Year 3, Computers Science Student',
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 16,
@@ -80,7 +79,7 @@ class Dashboard extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => ProtoPage()),
+                          MaterialPageRoute(builder: (context) => enProtoPage()),
                         );
                       },
                     ),
@@ -104,7 +103,7 @@ Card(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Tentang Saya',
+          'About Me',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -113,9 +112,9 @@ Card(
         ),
         SizedBox(height: 8),
         Text(
-          'Saya adalah mahasiswa Ilmu Komputer di Universitas Pakuan yang memiliki minat besar dalam teknologi, '
-          'matematika, dan sains. Selain fokus dalam bidang akademik, saya juga aktif dalam organisasi mahasiswa, '
-          'serta memiliki pengalaman di bidang desain grafis, pengembangan website, dan aplikasi.',
+          'I am a Computer Science student at Pakuan University who has a great interest in technology, '
+          'mathematics, and science. In addition to focusing on academics, I am also active in student organizations, '
+          'and has experience in graphic design, website development, and application development.',
           style: TextStyle(
             color: Colors.white,
             fontSize: 16,
@@ -142,7 +141,7 @@ Card(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Data Diri',
+          'Personal Data',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -151,14 +150,14 @@ Card(
         ),
         SizedBox(height: 8),
         Text(
-          'Nama : Muhammad Falleryan\n'
+          'Name : Muhammad Falleryan\n'
           'NPM : 065122185\n'
-          'Program Studi : Ilmu Komputer\n'
-          'Universitas : Universitas Pakuan\n'
-          'Angkatan : 2022\n'
-          'Tanggal Lahir : 01 Februari 2004\n'
-          'Usia : 20 Tahun\n'
-          'Alamat : Tegallega, Bogor',
+          'Major : Ilmu Komputer\n'
+          'University : Universitas Pakuan\n'
+          'Class of : 2022\n'
+          'Birth Date : 01 Februari 2004\n'
+          'Age : 20 Tahun\n'
+          'Address : Tegallega, Bogor',
           style: TextStyle(
             color: Colors.white,
             fontSize: 16,

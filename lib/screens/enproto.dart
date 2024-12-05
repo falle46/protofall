@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:bioapp/widgets/custom_sidebar.dart';
+import 'package:bioapp/widgets/encustom_sidebar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class ProtoPage extends StatelessWidget {
+class enProtoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +27,7 @@ class ProtoPage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: CustomSidebar(),
+      drawer: enCustomSidebar(),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -37,25 +37,25 @@ class ProtoPage extends StatelessWidget {
               _buildSectionTitle('CV'),
               Divider(color: Colors.blue[600]),
               SizedBox(height: 16),
-              _buildSubsectionTitle('Pendidikan'),
+              _buildSubsectionTitle('Study'),
               SizedBox(height: 8),
               _buildTextContent(
-                  '2019 - 2022\nIlmu Pengetahuan Alam - SMAN 7 Kerinci, Jambi'),
+                  '2019 - 2022\nNatural Science - SMAN 7 Kerinci, Jambi'),
               SizedBox(height: 8),
               _buildTextContent(
-                  '2022 - Sekarang\nS1 Ilmu Komputer - Universitas Pakuan, Bogor'),
+                  '2022 - Sekarang\nComputer Science - Universitas Pakuan, Bogor'),
               SizedBox(height: 16),
               _buildSubsectionTitle('Skill'),
               SizedBox(height: 8),
               _buildTextContent(
-                  'Ui/UX Desainer\nJunior Website Developer\nMenulis\nEditing Video & Foto\nPrompter Kode\nJunior Front End Developer\nMenggambar\nBahasa Inggris Tingkat Menengah'),
+                  'Ui/UX Desainer\nJunior Website Developer\nWriting\nEditing Video & Foto\nCode Prompt\nJunior Front End Developer\nDrawing\nIntermediate English'),
               SizedBox(height: 16),
-              _buildSubsectionTitle('Pengalaman Kegiatan dan Organisasi'),
+              _buildSubsectionTitle('Activities and Organizations Experience'),
               SizedBox(height: 8),
               _buildTextContent(
-                  'Lomba Inovasi Digital Mahasiswa (LIDM) 2024\nKomisioner Komisi Pemilihan Umum (KPU FMIPA) 2023\nAnggota Badan Legislatif Mahasiswa (BLM FMIPA) 2024\nFront End Projek Website HIMAKOM 2024\nMenyelesaikan Beberapa Projek Website Praktikum\nMenyelesaikan Beberapa Projek Website Mata Kuliah\nMenyelesaikan Pembuatan Aplikasi Mata Kuliah'),
+                  'Lomba Inovasi Digital Mahasiswa (LIDM) 2024\nHead Comissioner Komisi Pemilihan Umum (KPU FMIPA) 2023\nMember of Badan Legislatif Mahasiswa (BLM FMIPA) 2024\nFront End of the HIMAKOM website\nMake several amount of websites for University subject\nMake several amount of websites for University Lecture\nMaking Apps'),
               SizedBox(height: 16),
-              _buildSubsectionTitle('Dokumentasi'),
+              _buildSubsectionTitle('Docs'),
               Divider(color: Colors.blue[600]),
               SizedBox(height: 8),
               GridView.count(
@@ -77,7 +77,7 @@ class ProtoPage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 16),
-              _buildSubsectionTitle('Media Sosial'),
+              _buildSubsectionTitle('Social Media'),
               Divider(color: Colors.blue[600]),
               SizedBox(height: 8),
               GridView.count(
@@ -90,7 +90,7 @@ class ProtoPage extends StatelessWidget {
                   _buildGridItem(
                       context, 'LinkedIn', 'https://www.linkedin.com/in/falleryan46?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'),
                   _buildGridItem(
-                      context, 'Akun Lainnya', 'https://r8qs.adj.st/appinvites/TeamMatch%2f9Jq%2fOW9sX1mxztl9HvABacwmGaihAXLkaj7VLtXKrWweGJuawFCZKKYBRbb19uzF?adjust_t=q0le9d_ynoul8&adjust_deeplink=mobilelegends%3a%2f%2fappinvites%2fTeamMatch%2f9Jq%2fOW9sX1mxztl9HvABacwmGaihAXLkaj7VLtXKrWweGJuawFCZKKYBRbb19uzF'),
+                      context, 'More', 'https://r8qs.adj.st/appinvites/TeamMatch%2f9Jq%2fOW9sX1mxztl9HvABacwmGaihAXLkaj7VLtXKrWweGJuawFCZKKYBRbb19uzF?adjust_t=q0le9d_ynoul8&adjust_deeplink=mobilelegends%3a%2f%2fappinvites%2fTeamMatch%2f9Jq%2fOW9sX1mxztl9HvABacwmGaihAXLkaj7VLtXKrWweGJuawFCZKKYBRbb19uzF'),
                 ],
               ),
             ],
