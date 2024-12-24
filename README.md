@@ -1,3 +1,5 @@
-# bioapp
+ProtoFall adalah aplikasi portofolio pribadi yang dirancang untuk menampilkan karya-karya, CV, dan informasi profesional lainnya milik Fall. Aplikasi ini bertujuan untuk menjadi platform yang mudah diakses dan diandalkan dalam menampilkan keahlian, pengalaman, dan pencapaian akademik maupun non-akademik. Dengan desain yang modern dan antarmuka pengguna yang ramah, ProtoFall menyediakan gambaran yang jelas dan terorganisir mengenai perjalanan profesional Fall, sekaligus menjadi alat yang dapat digunakan untuk mempromosikan diri ke calon mitra kerja, institusi, atau pemberi beasiswa di masa depan.
 
-A new Flutter project.
+--------------------------------------------------------------------------
+
+ProtoFall is a personal portfolio application designed to showcase Fall's work, CV, and other professional information. This app aims to be an accessible and reliable platform for displaying skills, academic and non-academic experiences, and achievements. With a modern design and user-friendly interface, ProtoFall provides a clear and organized overview of Fall's professional journey, while serving as a tool for promoting oneself to potential employers, institutions, or scholarship providers in the future.
